@@ -330,7 +330,7 @@ ul.products,
 		list-style: none;
 		margin-left: 0;
 		margin-bottom: ms(7);
-		text-align: center;
+		//text-align: center;
 		position: relative;
 
 		.star-rating {
@@ -341,16 +341,28 @@ ul.products,
 			display: block;
 		}
 
+		.onsale {
+			margin-left: 10px;
+		}
+
 		.price {
-			display: block;
+			display: inline-block;
 			color: $color_body;
 			font-weight: 400;
 			margin-bottom: 1rem;
+			padding-left: 10px;
+			padding-right: 10px;
 
 			ins {
 				margin-left: ms(-2);
 				background-color: transparent;
 			}
+		}
+
+		.tax-info, .shipping-costs-info {
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: 0;
 		}
 
 		.woocommerce-loop-product__title,
@@ -365,7 +377,8 @@ ul.products,
 		.woocommerce-loop-category__title,
 		.wc-block-grid__product-title,
 		.wc-block-grid__product-title > a:not( .has-font-size ) {
-			font-size: 1rem;
+			font-size: 2rem;
+			padding-left: 10px;
 		}
 
 		.star-rating {
@@ -384,7 +397,10 @@ ul.products,
 		}
 
 		.button {
-			margin-bottom: 0.236em;
+			margin-top: 10px;
+			margin-bottom: 0;
+			width: 100%;
+			text-align: center;
 		}
 	}
 }
