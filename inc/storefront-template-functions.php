@@ -686,7 +686,9 @@ if ( ! function_exists( 'storefront_primary_navigation_wrapper_close' ) ) {
 	 * The primary navigation wrapper close
 	 */
 	function storefront_primary_navigation_wrapper_close() {
-		echo '</div></div>';
+		$result = '</div></div>';
+		if( is_front_page() ) $result .= '<div class="header-hero-wrapper"><img src="'.esc_url( get_theme_mod( 'storefront_header_hero_image' ) ).'"><div class="image-shadow"></div></div>';
+		echo $result;
 	}
 }
 

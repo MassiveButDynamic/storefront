@@ -308,6 +308,30 @@ body {
 	.widget {
 		margin-bottom: 0;
 	}
+
+	.header-hero-wrapper {
+		max-height: 350px;
+		overflow: hidden;
+		display: flex;
+		border-radius: 0;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+
+		img {
+			min-width: 100%;
+			border-radius: 0 !important;
+		}
+
+		.image-shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			box-shadow: inset 0 0 15px 0 #0000002e;
+		}
+	}
 }
 
 .home.blog,

@@ -101,6 +101,7 @@
 	font-size: ms(-1);
 	clear: both;
 	display: none;
+	width: 25em;
 
 	.widget_product_search {
 		input[type=text],
@@ -1792,7 +1793,14 @@ p.stars {
 
 .storefront-sorting {
 	font-size: ms(-1);
-	margin-bottom: ms(5);
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.storefront-sorting::before, .storefront-sorting::after {
+	content: unset !important;
+	display: none;
 }
 
 .woocommerce-tabs {
@@ -2004,6 +2012,10 @@ dl.variation {
  * Sticky Add to Cart
  */
 .storefront-sticky-add-to-cart {
+	display: none;
+}
+
+.woocommerce-notices-wrapper {
 	display: none;
 }
 
@@ -2465,11 +2477,15 @@ dl.variation {
 
 	.storefront-sorting {
 		@include clearfix;
-		margin-bottom: ms(5);
+		margin-bottom: 0;
 
 		select {
 			width: auto;
 		}
+	}
+
+	.site-search .widget_product_search {
+		margin: 0 !important;
 	}
 
 	.woocommerce-result-count {

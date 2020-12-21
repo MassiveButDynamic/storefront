@@ -383,6 +383,26 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				)
 			);
 
+			$wp_customize->add_setting(
+				'storefront_header_hero_image',
+				array(
+					'default'           => '',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'storefront_header_hero_image',
+					array(
+						'label'    => __( 'Hero Image', 'storefront' ),
+						'section'  => 'header_image',
+						'settings' => 'storefront_header_hero_image',
+						'priority' => 40,
+					)
+				)
+			);
+
 			/**
 			 * Footer section
 			 */
