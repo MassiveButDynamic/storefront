@@ -468,6 +468,14 @@ body {
 
 		@include remove-button-underline();
 	}
+
+	ul {
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+		}
+	}
 }
 
 .site-info {

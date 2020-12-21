@@ -25,6 +25,7 @@
 			 * @hooked storefront_credit         - 20
 			 */
 			do_action( 'storefront_footer' );
+			wp_nav_menu( 'footer' )
 			?>
 
 		</div><!-- .col-full -->
