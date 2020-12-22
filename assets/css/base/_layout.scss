@@ -603,6 +603,10 @@
 		margin-right: ms(5);
 		padding: 0;
 	}
+
+	.storefront-primary-navigation {
+		padding-bottom: 1em;
+	}
 }
 
 @include susy-media (max-width $handheld) {
@@ -610,5 +614,9 @@
 		margin-left: ms(2);
 		margin-right: ms(2);
 		padding: 0;
+	}
+
+	.storefront-primary-navigation {
+		padding-bottom: 1em;
 	}
 }
