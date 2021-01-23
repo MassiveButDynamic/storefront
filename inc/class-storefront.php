@@ -345,6 +345,8 @@ if ( ! class_exists( 'Storefront' ) ) :
 
 			wp_enqueue_script( 'storefront-navigation', get_template_directory_uri() . '/assets/js/navigation' . $suffix . '.js', array(), $storefront_version, true );
 			wp_enqueue_script( 'storefront-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix' . $suffix . '.js', array(), '20130115', true );
+			if(is_front_page()) wp_enqueue_script( 'storefront-homepage', get_template_directory_uri() . '/assets/js/header-hero-image-fader' . $suffix . '.js', array(), $storefront_version, true );
+			wp_enqueue_script( 'storefront-parallax', get_template_directory_uri() . '/assets/js/parallax' . $suffix . '.js', array(), $storefront_version, true );
 
 			if ( has_nav_menu( 'handheld' ) ) {
 				$storefront_l10n = array(

@@ -383,8 +383,11 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 				)
 			);
 
+
+			//Header image slider
+			//Image 1
 			$wp_customize->add_setting(
-				'storefront_header_hero_image',
+				'storefront_header_hero_image_1',
 				array(
 					'default'           => '',
 				)
@@ -393,13 +396,386 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			$wp_customize->add_control(
 				new WP_Customize_Image_Control(
 					$wp_customize,
-					'storefront_header_hero_image',
+					'storefront_header_hero_image_1',
 					array(
-						'label'    => __( 'Hero Image', 'storefront' ),
+						'label'    => __( 'Hero Image 1', 'storefront' ),
 						'section'  => 'header_image',
-						'settings' => 'storefront_header_hero_image',
+						'settings' => 'storefront_header_hero_image_1',
 						'priority' => 40,
 					)
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_slogan_1',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_slogan_1',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 1', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_slogan_1',
+					'priority' => 41,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_sub_slogan_1',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_sub_slogan_1',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 1', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_sub_slogan_1',
+					'priority' => 42,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_button_url_1',
+				array(
+					'default'           => 'warenkorb',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_button_url_1',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Button URL 1', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_button_url_1',
+					'priority' => 43,
+				)
+			);
+			
+			//Image2
+			$wp_customize->add_setting(
+				'storefront_header_hero_image_2',
+				array(
+					'default'           => '',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'storefront_header_hero_image_2',
+					array(
+						'label'    => __( 'Hero Image 2', 'storefront' ),
+						'section'  => 'header_image',
+						'settings' => 'storefront_header_hero_image_2',
+						'priority' => 50,
+					)
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_slogan_2',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_slogan_2',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 2', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_slogan_2',
+					'priority' => 51,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_sub_slogan_2',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_sub_slogan_2',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 2', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_sub_slogan_2',
+					'priority' => 52,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_button_url_2',
+				array(
+					'default'           => 'warenkorb',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_button_url_2',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Button URL 2', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_button_url_2',
+					'priority' => 53,
+				)
+			);
+
+			//Image 3
+			$wp_customize->add_setting(
+				'storefront_header_hero_image_3',
+				array(
+					'default'           => '',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'storefront_header_hero_image_3',
+					array(
+						'label'    => __( 'Hero Image 3', 'storefront' ),
+						'section'  => 'header_image',
+						'settings' => 'storefront_header_hero_image_3',
+						'priority' => 60,
+					)
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_slogan_3',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_slogan_3',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 3', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_slogan_3',
+					'priority' => 61,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_sub_slogan_3',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_sub_slogan_3',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 3', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_sub_slogan_3',
+					'priority' => 62,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_button_url_3',
+				array(
+					'default'           => 'warenkorb',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_button_url_3',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Button URL 3', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_button_url_3',
+					'priority' => 63,
+				)
+			);
+
+			//Image 4
+			$wp_customize->add_setting(
+				'storefront_header_hero_image_4',
+				array(
+					'default'           => '',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'storefront_header_hero_image_4',
+					array(
+						'label'    => __( 'Hero Image 4', 'storefront' ),
+						'section'  => 'header_image',
+						'settings' => 'storefront_header_hero_image_4',
+						'priority' => 70,
+					)
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_slogan_4',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_slogan_4',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 4', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_slogan_4',
+					'priority' => 71,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_sub_slogan_4',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_sub_slogan_4',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 4', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_sub_slogan_4',
+					'priority' => 72,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_button_url_4',
+				array(
+					'default'           => 'warenkorb',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_button_url_4',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Button URL 4', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_button_url_4',
+					'priority' => 73,
+				)
+			);
+
+			//Image 5
+			$wp_customize->add_setting(
+				'storefront_header_hero_image_5',
+				array(
+					'default'           => '',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'storefront_header_hero_image_5',
+					array(
+						'label'    => __( 'Hero Image 5', 'storefront' ),
+						'section'  => 'header_image',
+						'settings' => 'storefront_header_hero_image_5',
+						'priority' => 80,
+					)
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_slogan_5',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_slogan_5',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 5', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_slogan_5',
+					'priority' => 81,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_sub_slogan_5',
+				array(
+					'default'           => 'Alles reduziert!',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_sub_slogan_5',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Slogan 5', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_sub_slogan_5',
+					'priority' => 82,
+				)
+			);
+
+			$wp_customize->add_setting(
+				'storefront_header_hero_button_url_5',
+				array(
+					'default'           => 'warenkorb',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_button_url_5',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Button URL 5', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_button_url_5',
+					'priority' => 83,
+				)
+			);
+
+			//Button-Text
+			$wp_customize->add_setting(
+				'storefront_header_hero_button_text',
+				array(
+					'default'           => 'Jetzt zuschlagen',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_header_hero_button_text',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Button Text', 'storefront' ),
+					'section'  => 'header_image',
+					'settings' => 'storefront_header_hero_button_text',
+					'priority' => 90,
 				)
 			);
 
@@ -412,6 +788,45 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 					'title'       => __( 'Footer', 'storefront' ),
 					'priority'    => 28,
 					'description' => __( 'Customize the look & feel of your website footer.', 'storefront' ),
+				)
+			);
+
+			//Image above footer
+			$wp_customize->add_setting(
+				'storefront_front_page_image_above_footer',
+				array(
+					'default'           => '',
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Image_Control(
+					$wp_customize,
+					'storefront_front_page_image_above_footer',
+					array(
+						'label'    => __( 'Bild über dem Footer', 'storefront' ),
+						'section'  => 'storefront_footer',
+						'settings' => 'storefront_front_page_image_above_footer',
+						'priority' => 80,
+					)
+				)
+			);
+			//Slogan Footer
+			$wp_customize->add_setting(
+				'storefront_footer_page_image_slogan',
+				array(
+					'default'           => 'Wir kümmern uns um Ihr Wohlergehen, damit Sie sich um das kümmern können, worauf es im Leben ankommt',
+				)
+			);
+
+			$wp_customize->add_control(
+				'storefront_footer_page_image_slogan',
+				array(
+					'type' => 'text',
+					'label'    => __( 'Footer Slogan', 'storefront' ),
+					'section'  => 'storefront_footer',
+					'settings' => 'storefront_footer_page_image_slogan',
+					'priority' => 82,
 				)
 			);
 

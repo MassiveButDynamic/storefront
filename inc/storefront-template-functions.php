@@ -687,7 +687,25 @@ if ( ! function_exists( 'storefront_primary_navigation_wrapper_close' ) ) {
 	 */
 	function storefront_primary_navigation_wrapper_close() {
 		$result = '</div></div>';
-		if( is_front_page() ) $result .= '<div class="header-hero-wrapper"><img src="'.esc_url( get_theme_mod( 'storefront_header_hero_image' ) ).'"><div class="image-shadow"></div></div>';
+		if( is_front_page() ) {
+			$result .= '<div class="header-hero-wrapper">';
+			if(get_theme_mod( 'storefront_header_hero_image_1' )) $result .= '<img id="header-hero-image-1" src="'.esc_url( get_theme_mod( 'storefront_header_hero_image_1' ) ).'" alt="'.get_post_meta(attachment_url_to_postid(esc_url(get_theme_mod( 'storefront_header_hero_image_1' ))), '_wp_attachment_image_alt', TRUE).'" class="active">';
+			if(get_theme_mod( 'storefront_header_hero_image_2' )) $result .= '<img id="header-hero-image-2" src="'.esc_url( get_theme_mod( 'storefront_header_hero_image_2' ) ).'" alt="'.get_post_meta(attachment_url_to_postid(esc_url(get_theme_mod( 'storefront_header_hero_image_2' ))), '_wp_attachment_image_alt', TRUE).'">';
+			if(get_theme_mod( 'storefront_header_hero_image_3' )) $result .= '<img id="header-hero-image-3" src="'.esc_url( get_theme_mod( 'storefront_header_hero_image_3' ) ).'" alt="'.get_post_meta(attachment_url_to_postid(esc_url(get_theme_mod( 'storefront_header_hero_image_3' ))), '_wp_attachment_image_alt', TRUE).'">';
+			if(get_theme_mod( 'storefront_header_hero_image_4' )) $result .= '<img id="header-hero-image-4" src="'.esc_url( get_theme_mod( 'storefront_header_hero_image_4' ) ).'" alt="'.get_post_meta(attachment_url_to_postid(esc_url(get_theme_mod( 'storefront_header_hero_image_4' ))), '_wp_attachment_image_alt', TRUE).'">';
+			if(get_theme_mod( 'storefront_header_hero_image_5' )) $result .= '<img id="header-hero-image-5" src="'.esc_url( get_theme_mod( 'storefront_header_hero_image_5' ) ).'" alt="'.get_post_meta(attachment_url_to_postid(esc_url(get_theme_mod( 'storefront_header_hero_image_5' ))), '_wp_attachment_image_alt', TRUE).'">';
+			
+			$result .= '<div class="slogan-wrapper">';
+			if(get_theme_mod( 'storefront_header_hero_slogan' )) {
+				if(get_theme_mod( 'storefront_header_hero_slogan_1' )) $result .= '<div class="text-overlay-wrapper active" id="text-overlay-wrapper-1"><div class="slogan">'.get_theme_mod('storefront_header_hero_slogan_1').'</div><div class="sub-slogan">'.get_theme_mod('storefront_header_hero_sub_slogan_1').'</div><a class="cta-button" href="'.get_theme_mod('storefront_header_hero_button_url_1').'">'.get_theme_mod('storefront_header_hero_button_text').'</a></div>';
+				if(get_theme_mod( 'storefront_header_hero_slogan_1' )) $result .= '<div class="text-overlay-wrapper" id="text-overlay-wrapper-2"><div class="slogan">'.get_theme_mod('storefront_header_hero_slogan_2').'</div><div class="sub-slogan">'.get_theme_mod('storefront_header_hero_sub_slogan_2').'</div><a class="cta-button" href="'.get_theme_mod('storefront_header_hero_button_url_2').'">'.get_theme_mod('storefront_header_hero_button_text').'</a></div>';
+				if(get_theme_mod( 'storefront_header_hero_slogan_1' )) $result .= '<div class="text-overlay-wrapper" id="text-overlay-wrapper-3"><div class="slogan">'.get_theme_mod('storefront_header_hero_slogan_3').'</div><div class="sub-slogan">'.get_theme_mod('storefront_header_hero_sub_slogan_3').'</div><a class="cta-button" href="'.get_theme_mod('storefront_header_hero_button_url_3').'">'.get_theme_mod('storefront_header_hero_button_text').'</a></div>';
+				if(get_theme_mod( 'storefront_header_hero_slogan_1' )) $result .= '<div class="text-overlay-wrapper" id="text-overlay-wrapper-4"><div class="slogan">'.get_theme_mod('storefront_header_hero_slogan_4').'</div><div class="sub-slogan">'.get_theme_mod('storefront_header_hero_sub_slogan_4').'</div><a class="cta-button" href="'.get_theme_mod('storefront_header_hero_button_url_4').'">'.get_theme_mod('storefront_header_hero_button_text').'</a></div>';
+				if(get_theme_mod( 'storefront_header_hero_slogan_1' )) $result .= '<div class="text-overlay-wrapper" id="text-overlay-wrapper-5"><div class="slogan">'.get_theme_mod('storefront_header_hero_slogan_5').'</div><div class="sub-slogan">'.get_theme_mod('storefront_header_hero_sub_slogan_5').'</div><a class="cta-button" href="'.get_theme_mod('storefront_header_hero_button_url_5').'">'.get_theme_mod('storefront_header_hero_button_text').'</a></div>';
+			}
+			$result .= '</div>';
+			$result .= '<div class="image-shadow"></div></div>';
+		} 
 		echo $result;
 	}
 }
