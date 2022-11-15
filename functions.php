@@ -67,3 +67,16 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
 		require 'inc/nux/class-storefront-nux-starter-content.php';
 	}
 }
+// Gewicht berechnung
+add_filter('woocommerce_cart_contents_weight', 'add_package_weight_to_cart_contents_weight');
+function add_package_weight_to_cart_contents_weight( $weight )
+{
+$weight = $weight + 0.18; // or add 30% * 1.3 etc.
+return $weight;
+}
+
+function storefront_remove_google_fonts() {
+    wp_dequeue_style( 'storefront-fonts' );
+}
+
+add_action( 'wp_enqueue_scripts', 'storefront_remove_google_fonts' );
